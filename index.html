@@ -17,11 +17,13 @@
 </head>
 <body>
   <div class="container">
-      <form class="form-inline">
-        <div name="fn">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <label for="fn">Student name</label>
-      <div class="form-group">
+      <form class="form-inline col-sm-11">
+        <div name="fn" >
+          <div class="col-sm-2">
+            <label for="fn" class="col-sm-1">Student name</label>
+          </div>
+
+      <div class="form-group col-sm-3">
        <div class="input-group input-group-lg">
          <span class="input-group-addon">
            <span class="fa fa-user"></span>
@@ -29,8 +31,8 @@
          <input class="form-control" type="text" placeholder="First name">
        </div>
      </div>
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     <div class="form-group">
+
+     <div class="form-group col-sm-3">
       <div class="input-group input-group-lg">
         <span class="input-group-addon">
           <span class="fa fa-user"></span>
@@ -41,17 +43,84 @@
       </div>
      </form>
 
-     <form role="form">
-      <div name="bd">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <label for="bd">Birth day</label>
-    <div class="form-group">
-     <div class="input-group col-md-6">
-       <input class="form-control" type="text" placeholder="First name">
-     </div>
-    </div>
+     <form class="form-horizontal col-sm-11" role="form">
+
+        <div class="form-group">
+          <br>
+          <div class="col-sm-2">
+            <label for="bd" class="control-label col-sm-9">Birth day</label>
+          </div>
+
+
+          <div class="col-sm-6">
+            <input type="date" class="form-control input-md" name="bd" placeholder="Введіть будь ласка email">
+          </div>
+        </div>
+      </form>
+
+      <form class="form-horizontal col-sm-11" role="form">
+
+         <div class="form-group">
+           <br>
+           <div class="col-sm-2">
+             <label for="g-r" class="control-label col-sm-9">Gender</label>
+           </div>
+
+
+           <div class="col-sm-6">
+              <select class="selectpicker  form-control input-md" name="g-r">
+               <option value="man">Man</option>
+               <option value="wooman">Wooman</option>
+              </select>
+           </div>
+         </div>
+       </form>
+
+       <form class="form-inline col-sm-11">
+         <div name="as" >
+           <div class="col-sm-2">
+             <label for="as" class="col-sm-1">Address</label>
+           </div>
+
+       <div class="form-group col-sm-3">
+        <div class="input-group">
+          <span class="input-group-addon">
+            <span class="fa fa-flag"></span>
+          </span>
+          <input class="form-control" type="text" placeholder="Country">
+        </div>
+      </div>
+
+      <div class="form-group col-sm-3">
+       <div class="input-group">
+         <span class="input-group-addon">
+           <span class="fa fa-home"></span>
+         </span>
+         <input class="form-control" type="text" placeholder="City">
        </div>
-    </form>
+     </div>
+       </div>
+      </form>
+
+      <form class="form-inline">
+
+        <label for="ass" class="col-md-2">&nbsp;&nbsp;</label>
+        <div name="ass">
+      <div class="form-group col-lg-15">
+       <div class="input-group col-lg-12">
+
+         <input class="form-control" type="text" placeholder="Country">
+       </div>
+     </div>
+
+     <div class="form-group col-lg-15">
+      <div class="input-group col-lg-10">
+        <input class="form-control" type="text" placeholder="City">
+      </div>
+    </div>
+      </div>
+     </form>
+
   </div>
   <script>console.log('vono ne po centry bo ya typiy');
   console.log(((10*11)+1)*6);
