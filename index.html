@@ -20,7 +20,7 @@
       <form class="form-inline col-sm-11">
         <div name="fn" >
           <div class="col-sm-2">
-            <label for="fn" class="col-sm-1">Student name</label>
+            <label for="fn" class="control-label col-sm-9">Student name</label>
           </div>
 
       <div class="form-group col-sm-3">
@@ -79,7 +79,7 @@
        <form class="form-inline col-sm-11">
          <div name="as" >
            <div class="col-sm-2">
-             <label for="as" class="col-sm-1">Address</label>
+             <label for="as" class="control-label col-sm-9">Address</label>
            </div>
 
        <div class="form-group col-sm-3">
@@ -102,9 +102,10 @@
        </div>
       </form>
 
-      <form class="form-inline">
-
-        <label for="ass" class="col-md-2">&nbsp;&nbsp;</label>
+      <form class="form-inline col-sm-11">
+      <div class="col-sm-2">
+        <label for="ass" class="control-label col-sm-9"></label>
+      </div>
         <div name="ass">
       <div class="form-group col-lg-15">
        <div class="input-group col-lg-12">
@@ -121,8 +122,61 @@
       </div>
      </form>
 
+     <form class="form-horizontal col-sm-11" role="form">
+
+        <div class="form-group">
+
+          <div class="col-sm-2">
+            <label for="sa" class="control-label col-sm-9"></label>
+          </div>
+
+
+          <div class="col-sm-6">
+            <input type="text" class="form-control " name="sa" placeholder="Street adress">
+          </div>
+        </div>
+      </form>
+
+      <form role="form" class="form-horizontal col-sm-11">
+        <div class="form-group">
+          <div class="col-sm-2">
+            <label for="se" class="col-sm-9">Student email</label>
+          </div>
+           <div class="input-group input-group-lg">
+             <span class="input-group-addon">
+               <span class="glyphicon glyphicon-envelope"></span>
+             </span>
+             <div class="col-lg-6">
+               <input class="form-control"  id="se" name="se"></textarea>
+             </div>
+           </div>
+         </div>
+
+       </form>
+
+
+
+       <form role="form" class="col-sm-11">
+         <div class="form-group">
+           <div class="col-sm-2">
+             <label for="at" class="col-sm-9">Aditional text</label>
+           </div>
+           <div class="col-sm-6">
+             <textarea class="form-control" rows="5" id="at" name="at"></textarea>
+           </div>
+         </div>
+        </form>
+
+        <div class="checkbox">
+          <label><input type="checkbox">Запам'ятати мене</label>
+        </div>
+
+
+        <a href="./index.html"><button type="submit" name="button" class="btn btn-success">Registration</button></a>
+
   </div>
-  <script>console.log('vono ne po centry bo ya typiy');
+  <script>
+  console.log('vono ne po centry bo ya typiy');
   console.log(((10*11)+1)*6);
   </script>
 </body>
